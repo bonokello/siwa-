@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBIT CYBER</title>
+    <style>
+        body {
+            background-image: url('images/spider-web.jpg.jpg'); /* Local path to the background image */
+            background-size: cover; /* Ensure the image covers the whole page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent tiling of the image */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Optional: Set a default font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+        .header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background to contrast with text */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            max-width: 300px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+            border-radius: 20px; /* Rounded corners for aesthetics */
+            margin: 20px auto; /* Center the container */
+            max-width: 800px; /* Optional: Set a maximum width */
+            flex: 1; /* Allow container to grow and fill the available space */
+        }
+        .selection-list {
+            list-style: none;
+            padding: 0;
+        }
+        .selection-list li {
+            margin-bottom: 10px;
+        }
+        .selection-list label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #ffffff; /* White text color */
+            background-color: #007bff; /* Blue background color */
+            border: 1px solid #0056b3; /* Darker blue border color */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            appearance: none; /* Remove default styling */
+            text-align: center; /* Center the text */
+        }
+        select:focus {
+            outline: none; /* Remove default focus outline */
+            box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Add a blue focus shadow */
+        }
+        h2 {
+            color: red; /* Color for <h2> */
+        }
+        h3 {
+            color: blue; /* Color for <h3> */
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background to match the header */
+            color: yellow; /* Yellow text color */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png.jfif" alt="ORBIT CYBER Logo">
+        <h1>ORBIT CYBER</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome! ORBIT CYBER WI-FI</h2>
+        <h3>Please select your data package</h3>
+        <ul class="selection-list">
+            <li>
+                <label for="item1">1. 30 mins unlimited @ 15KES</label>
+                <select id="item1">
+                    <option value="30mins">Select</option>
+                </select>
+            </li>
+            <li>
+                <label for="item2">2. 1 Hour unlimited @ 30KES</label>
+                <select id="item2">
+                    <option value="1hour">Select</option>
+                </select>
+            </li>
+            <li>
+                <label for="item3">3. 2 Hours unlimited @ 60KES</label>
+                <select id="item3">
+                    <option value="2hours">Select</option>
+                </select>
+            </li>
+            <li>
+                <label for="item4">4. 12 Hours unlimited @ 200KES</label>
+                <select id="item4">
+                    <option value="12hours">Select</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        Designed by Bonyokello
+    </footer>
+</body>
+</html>
